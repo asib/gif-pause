@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="20" height="20">
+    <h1>GIF Pause</h1>
+  </header>
+
+  <label class="row">
+    <span>
+      <span class="label">Freeze animated images</span>
+      <span class="status" id="status"></span>
+    </span>
+    <input type="checkbox" id="enabled" role="switch">
+  </label>
+
+  <p class="warning" id="warning" hidden></p>
+
+  <footer id="reload-row" hidden>
+    <span>Reload open tabs to apply.</span>
+    <button id="reload" type="button">Reload this tab</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

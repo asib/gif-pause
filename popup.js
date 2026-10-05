@@ -4,9 +4,11 @@ const toggle = document.getElementById("enabled");
 const status = document.getElementById("status");
 const warning = document.getElementById("warning");
 const reloadRow = document.getElementById("reload-row");
+const hint = document.getElementById("hint");
 
 function render(enabled) {
   toggle.checked = enabled;
+  hint.hidden = !enabled;
   status.textContent = enabled
     ? "GIFs show their first frame only"
     : "GIFs play normally";
